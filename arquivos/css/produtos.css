@@ -1,0 +1,60 @@
+/* Criado parte dos Código para Tela Produtos */
+.parte-produtos{ /* Pare para configurar o menu de modalidades*/
+    background-color: #ffd3e9;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.parte-produtos>button {
+    border: none; /* Remove completamente a borda */
+    background-color: #ff7aa0;
+    padding: 10px 15px;
+    border-radius: 25px; /* Arredonda os cantos */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.parte-produtos>button:hover { /* Efeito ao passar o mouse */
+    background-color: #ffffff;
+    color: #ff7aa0;
+    font-weight: bold;
+}
+.carrossel-produtos {
+    margin: 35px;
+    display: flex; /* Torna o container flexível */
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha caso não caibam */
+    justify-content: center;
+    gap: 25px; /* Adiciona um espaçamento entre os itens */
+}
+
+.item-produto {
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Tamanho de Cada DIV  */
+    text-align: center;
+}
+
+.item-produto img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.item-produto>button {
+    border: none;
+    background-color: #ff7aa0;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+}
+.item-produto>button:hover {
+    background-color: #7b4b52;
+    color: #ffffff;
+    font-weight: bold;
+}

@@ -1,0 +1,282 @@
+/* --- Estilos para a Página "Sobre" --- */
+
+/* Container principal da página Sobre */
+.sobre-main {
+    padding: 50px 0; /* Espaçamento geral para a página */
+    background-color: #fff8f5; /* Cor de fundo suave */
+}
+
+/* Seção principal "Sobre a Jô" */
+.section-sobre-principal {
+    margin-bottom: 60px; /* Espaço após esta seção */
+}
+
+.container-sobre { /* Mantido do seu CSS, mas revisado para clareza */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo se houver espaço */
+    gap: 40px; /* Espaço entre imagem e texto */
+    max-width: 1000px; /* Limita a largura para melhor leitura */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 25px; /* Padding nas laterais */
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+}
+
+.image-sobre {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Garante tamanho mínimo para imagem */
+    text-align: center; /* Centraliza a imagem se ela for menor que o container */
+}
+
+.image-sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Cantos arredondados para a imagem */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
+}
+
+.text-sobre {
+    flex: 1;
+    min-width: 300px; /* Garante tamanho mínimo para o texto */
+    padding-left: 0; /* Removido padding-left fixo, usar gap do container */
+    text-align: left;
+    max-width: 550px; /* Limita a largura do texto para legibilidade */
+}
+
+.text-sobre .titulo-destaque { /* Título da seção "Nossa Trajetória" */
+    font-size: 2.2rem;
+    color: #ff7aa0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.text-sobre p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Seção de Missão, Visão e Valores */
+.valores-missao {
+    padding: 60px 20px;
+    background-color: #ffe9f0; /* Fundo suave para a seção */
+    margin-bottom: 60px;
+}
+
+.valores-missao h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.valores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Espaço entre os cards de valores */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.valor-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    flex: 1 1 280px; /* Permite 3 cards por linha em telas maiores, 1 ou 2 em menores */
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.valor-card .icon-lg { /* Estilo para os ícones grandes */
+    font-size: 3.5rem;
+    color: #ff7aa0;
+    margin-bottom: 15px;
+}
+
+.valor-card h3 {
+    font-size: 1.6rem;
+    color: #ff7aa0;
+    margin-bottom: 15px;
+}
+
+.valor-card p,
+.valor-card ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.valor-card ul {
+    list-style: none; /* Remove marcadores de lista padrão */
+    padding: 0;
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    width: 100%;
+}
+
+.valor-card ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.valor-card ul li::before { /* Ícone customizado para os itens da lista */
+    content: "\2713"; /* Checkmark Unicode */
+    color: #28a745; /* Cor verde para o check */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Estilos para Depoimentos - Mantidos e ligeiramente aprimorados */
+.depoimentos {
+    background-color: #fff8f5; /* Alterado para combinar com o body */
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.depoimentos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Aumentado o espaço entre os depoimentos */
+    max-width: 1100px; /* Aumentado o max-width */
+    margin: auto;
+}
+
+.depoimentos blockquote { /* Ajustes para o blockquote dentro de .depoimentos */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 300px; /* Permite 2-3 por linha dependendo do espaço, com mínimo de 300px */
+    max-width: 380px; /* Aumenta o tamanho máximo de cada depoimento */
+    text-align: center;
+    font-style: italic;
+    border-left: 6px solid #ff7aa0;
+    position: relative; /* Necessário para posicionar o ::before */
+    margin: 0; /* Remover margem padrão do blockquote */
+}
+
+/* Footer do depoimento (nome do autor) */
+.depoimentos blockquote footer {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center; /* Centraliza o nome do autor */
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Aspas estilizadas - já está bom */
+.depoimentos blockquote::before {
+    content: "\201C";
+    font-size: 40px;
+    color: #ff7aa0;
+    position: absolute;
+    top: 10px; /* Ajuste para melhor posicionamento */
+    left: 20px; /* Ajuste para melhor posicionamento */
+}
+
+.depoimentos blockquote:hover {
+    transform: scale(1.03); /* Efeito de scale um pouco menor */
+    transition: 0.3s ease-in-out;
+}
+
+/* Seção de Contato Simplificada */
+.contato-simples {
+    padding: 60px 20px;
+    background-color: #fff0f5; /* Fundo suave */
+    text-align: center;
+    border-top: 1px solid #ffb6c1; /* Linha sutil de separação */
+    border-bottom: 1px solid #ffb6c1;
+}
+
+.contato-simples h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contato-simples .subtitulo-contato {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contato-simples .btn-contato-page {
+    background-color: #ff7aa0;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Botão arredondado */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* Remover sublinhado do link */
+    display: inline-flex; /* Permite alinhar texto e ícone */
+    align-items: center;
+    gap: 10px; /* Espaço entre texto e ícone */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-simples .btn-contato-page:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos Responsivos (Adaptação para telas menores) */
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column; /* Empilha imagem e texto em telas menores */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .text-sobre {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-sobre .titulo-destaque {
+        font-size: 1.8rem;
+    }
+
+    .valores-container {
+        flex-direction: column; /* Empilha os cards de valores em telas menores */
+        align-items: center;
+    }
+
+    .valor-card {
+        max-width: 90%; /* Ocupa quase toda a largura */
+    }
+
+    .depoimentos blockquote {
+        flex: 1 1 100%; /* Ocupa a largura total em telas menores */
+        max-width: 90%;
+    }
+
+    .contato-simples .btn-contato-page {
+        width: 100%; /* Botão ocupa 100% da largura em telas menores */
+        max-width: 300px;
+    }
+}

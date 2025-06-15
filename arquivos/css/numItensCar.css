@@ -1,0 +1,31 @@
+.cart-link {
+    position: relative; /* Essencial para posicionar o contador */
+    display: inline-block; /* Garante que a posição funcione corretamente */
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px; /* Ajusta a posição vertical */
+    right: -5px; /* <--- Mude de -12px para -5px (ou outro valor pequeno negativo) */
+    background-color: #e60000;
+    color: white;
+    border-radius: 50%;
+    min-width: 24px;
+    height: 24px;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Classe para mostrar o contador via JS */
+#cart-count.visible {
+    display: flex;
+}
+#carrinho-icone {
+    position: relative;
+}

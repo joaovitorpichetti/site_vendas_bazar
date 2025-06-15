@@ -1,0 +1,131 @@
+/* Estilos para o título */
+.texto-centro {
+    text-align: center;
+    margin-bottom: 40px; /* Mais espaço para separar do conteúdo */
+    color: #333;
+    font-size: 2.5rem; /* Título um pouco maior */
+    font-weight: 700; /* Mais encorpado */
+    text-transform: uppercase; /* Deixa o título em maiúsculas para destaque */
+    letter-spacing: 2px; /* Pequeno espaçamento entre as letras */
+}
+
+/* Container para centralizar os itens */
+.centraliza-itens {
+    margin: 0 auto;
+    max-width: 900px; /* Ligeiramente mais largo para mais espaço */
+    padding: 0 25px; /* Mais padding lateral */
+}
+
+/* Estilos para o container de cada item do carrinho */
+#carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove o gap aqui, pois a borda superior vai criar a separação visual */
+}
+
+/* Estilos para cada item individualmente */
+.carrinho-item {
+    background-color: #fff; /* Fundo branco */
+    /* Removendo border, border-radius e box-shadow daqui para um visual mais clean */
+    padding: 20px 25px; /* Ajuste o padding interno para mais espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre as linhas de texto do item */
+    transition: background-color 0.2s ease-in-out; /* Suaviza a transição de hover */
+    margin: 10px;
+}
+
+/* Adiciona uma linha divisória entre os itens (exceto o primeiro) */
+.carrinho-item + .carrinho-item {
+    border-top: 1px solid #eee; /* Linha divisória suave */
+}
+
+.carrinho-item:hover {
+    background-color: #f9f9f9; /* Leve alteração de fundo ao passar o mouse para feedback */
+}
+
+.carrinho-item h3 { /* Nome do produto */
+    font-size: 1.4rem; /* Um pouco maior */
+    color: #ff7aa0; /* Cor de destaque */
+    margin-bottom: 8px; /* Mais espaço abaixo do título do item */
+}
+
+.carrinho-item p { /* Detalhes como Valor Unitário e Quantidade */
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5; /* Melhora a legibilidade do texto */
+}
+
+/* Novo estilo para a div que contém os detalhes de quantidade e o total do item */
+.item-details {
+    display: flex;
+    justify-content: space-between; /* Empurra o conteúdo para as extremidades */
+    align-items: baseline; /* Alinha os textos na linha de base */
+    width: 100%;
+    margin-top: 5px; /* Pequeno espaço acima dos detalhes */
+    margin-bottom: 10px; /* Espaço abaixo dos detalhes e acima do botão */
+}
+
+/* Estilo para o preço total de cada item */
+.item-details .item-total {
+    font-weight: bold;
+    color: #28a745; /* Cor verde para destaque, como na imagem de exemplo */
+    font-size: 1.2rem; /* Um pouco maior para destaque */
+    white-space: nowrap; /* Evita que o valor do preço quebre a linha */
+}
+
+/* Estilo para o botão "Remover" */
+.carrinho-item .remover-btn {
+    background-color: #dc3545; /* Cor vermelha mais padrão para remover (perigo) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px; /* Um pouco mais de padding para o botão */
+    cursor: pointer;
+    align-self: flex-start; /* Alinha o botão à esquerda dentro do card */
+    margin-top: 10px;
+    font-size: 0.95rem; /* Levemente maior */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.carrinho-item .remover-btn:hover {
+    background-color: #c82333; /* Tom mais escuro no hover */
+}
+
+/* Estilos para o total e botões de ação */
+.container-botoes-carrinho {
+    text-align: center;
+    margin-top: 50px; /* Mais espaço acima do total e botões */
+    padding-bottom: 40px;
+    background-color: #fff; /* Fundo branco para o bloco de total */
+    border-top: 1px solid #ddd; /* Linha superior para separar dos itens */
+    padding-top: 30px; /* Padding superior */
+}
+
+#total {
+    font-size: 2.2rem; /* Total mais evidente */
+    color: #ff7aa0;
+    font-weight: bold;
+    margin-bottom: 25px; /* Mais espaço abaixo do total */
+}
+
+.container-botoes-carrinho button {
+    background-color: #ff7aa0;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Botões mais arredondados */
+    padding: 14px 30px; /* Mais padding para botões maiores */
+    font-size: 1.2rem; /* Texto maior nos botões */
+    cursor: pointer;
+    margin: 0 12px; /* Mais espaço entre os botões */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Efeito no hover */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Mais espaço entre ícone e texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra nos botões */
+}
+
+.container-botoes-carrinho button:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px); /* Pequeno "salto" no hover */
+}

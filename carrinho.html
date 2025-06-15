@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Presentes</title>
+    <link rel="stylesheet" href="arquivos/css/manu.css">
+    <script src="arquivos/js/filtroProdutos.js" defer></script>
+    <link href="arquivos/css/carrinho.css" rel="stylesheet">
+    <link href="arquivos/css/footer.css" rel="stylesheet">
+    <link href="arquivos/css/numItensCar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="index.html"><img src="imagens/Logo3Jo.png" alt="Jo Presentes" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link">
+                        <i style="font-size: 2rem; text-align: center;" class="bi bi-cart3"></i>
+                        <span id="cart-count">0</span> </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<section class="banner">
+    <div class="banner-texto">
+        <h2>Seu Carrinho</h2>
+        <p>Perfumes, maquiagens, papelaria e muito mais!</p>
+    </div>
+</section>
+
+    <h2 class="texto-centro">Itens</h2>
+    <div class="centraliza-itens">
+        <!-- Lista de itens -->
+        <div id="carrinho"></div>
+    </div>
+
+    <div class="container-botoes-carrinho">
+        <p id="total">Total: R$ 150,00</p>
+        <button><i class="bi bi-check-lg"></i> Comprar</button>
+        <button id="limpar" onclick="limparCarrinho()"><i class="bi bi-trash3"></i> Limpar carrinho</button>
+    </div>
+    </div>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Jo Presentes - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/jo.presente.multi/" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/jocelaine.boeira" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/5554981473202?text=Ol%C3%A1%2C%20vim%20pelo%20Site!" target="_blank" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="arquivos/js/carrinho.js"></script>
+
+</body>
+</html>

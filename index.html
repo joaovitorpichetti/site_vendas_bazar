@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Presentes</title>
+    <link rel="stylesheet" href="arquivos/css/manu.css">
+    <script src="arquivos/js/filtroProdutos.js" defer></script>
+    <link href="arquivos/css/footer.css" rel="stylesheet">
+    <link href="arquivos/css/numItensCar.css" rel="stylesheet">
+    <link href="arquivos/css/carrossel.css" rel="stylesheet">
+    <link href="arquivos/css/index.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="index.html"><img src="imagens/Logo3Jo.png" alt="Jo Presentes" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link">
+                        <i style="font-size: 2rem; text-align: center;" class="bi bi-cart3"></i>
+                        <span id="cart-count">0</span> </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Carrosel da Pg Index -->
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="slide active">
+            <img src="imagens/Carrossel_1.png" alt="Promoção de perfumes">
+        </div>
+        <div class="slide">
+            <img src="imagens/Carrossel_2.png" alt="Lançamentos em papelaria">
+        </div>
+        <div class="slide">
+            <img src="imagens/Carrossel_3.png" alt="Novidades em maquiagens">
+        </div>
+    </div>
+    <div class="carousel-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="banner-texto">
+        <h2>Bem-vindo à Jo Presentes!</h2>
+        <p>Encontre o presente perfeito para cada ocasião. Qualidade, carinho e bom gosto em cada detalhe.</p>
+        <a href="produtos.html" class="btn-ver-mais-depoimentos">Explorar Produtos</a>
+    </div>
+</section>
+
+
+<section class="chamada-categorias">
+    <div class="container">
+        <h2>Explore Por Categoria</h2>
+        <p>Encontre o presente ideal navegando por nossas seleções especiais.</p>
+        <div class="categorias-grid">
+            <a href="produtos.html?categoria=perfumes" class="card-categoria">
+                <img src="imagens/18.jpg" alt="Perfumes">
+                <h3>Perfumes</h3>
+            </a>
+            <a href="produtos.html?categoria=maquiagem" class="card-categoria">
+                <img src="imagens/12.jpg" alt="Maquiagem">
+                <h3>Maquiagem</h3>
+            </a>
+            <a href="produtos.html?categoria=papelaria" class="card-categoria">
+                <img src="imagens/13.jpg" alt="Papelaria">
+                <h3>Papelaria</h3>
+            </a>
+            <a href="produtos.html?categoria=kits" class="card-categoria">
+                <img src="imagens/kit1.jpeg" alt="Kits Presente">
+                <h3>Kits Presente</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="depoimentos-home">
+    <div class="container">
+        <h2>O que nossos clientes dizem sobre nós</h2>
+        <div class="depoimentos-slider">
+            <blockquote>
+                "A Jo Presentes é minha loja favorita! Produtos de qualidade e atendimento impecável."
+                <footer>– Ana Carolina S.</footer>
+            </blockquote>
+            <blockquote>
+                "Presentes únicos e criativos! Sempre surpreendo com as escolhas da Jo Presentes."
+                <footer>– Marcos Vinícius L.</footer>
+            </blockquote>
+            <blockquote>
+                "O site é fácil de usar e a entrega é super rápida. Recomendo a todos!"
+                <footer>– Juliana F.</footer>
+            </blockquote>
+        </div>
+        <a href="sobre.html#depoimentos" class="btn-ver-mais-depoimentos">Ver todos os Depoimentos</a>
+    </div>
+</section>
+
+<section class="newsletter-social">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Receba Novidades e Ofertas!</h2>
+            <p>Cadastre-se para receber promoções exclusivas e lançamentos da Jo Presentes.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+        <div class="social-content">
+            <h2>Conecte-se Conosco</h2>
+            <p>Siga-nos nas redes sociais para inspirações diárias e novidades!</p>
+            <div class="social-icons-main">
+                <a href="https://www.instagram.com/jo.presente.multi/" target="_blank" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/jocelaine.boeira" target="_blank" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/5554981473202?text=Ol%C3%A1%2C%20vim%20pelo%20Site!" target="_blank" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contato-simples">
+    <h2 class="texto-centro">Ficou com alguma dúvida?</h2>
+    <p class="subtitulo-contato">Entre em contato conosco e teremos prazer em ajudar!</p>
+    <a href="contato.html" class="btn-contato-page">Fale Conosco <i class="bi bi-arrow-right"></i></a>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Jo Presentes - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/jo.presente.multi/" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/jocelaine.boeira" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/5554981473202?text=Ol%C3%A1%2C%20vim%20pelo%20Site!" target="_blank" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="arquivos/js/carrinho.js"></script> </body>
+</html>

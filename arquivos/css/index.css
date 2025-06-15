@@ -1,0 +1,302 @@
+/* Seção de Contato Simplificada (já existente) */
+.contato-simples {
+    padding: 60px 20px;
+    background-color: #fff0f5; /* Fundo suave */
+    text-align: center;
+    border-top: 1px solid #ffb6c1; /* Linha sutil de separação */
+    border-bottom: 1px solid #ffb6c1;
+}
+
+.contato-simples h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contato-simples .subtitulo-contato {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contato-simples .btn-contato-page {
+    background-color: #ff7aa0;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Botão arredondado */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* Remover sublinhado do link */
+    display: inline-flex; /* Permite alinhar texto e ícone */
+    align-items: center;
+    gap: 10px; /* Espaço entre texto e ícone */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contato-simples .btn-contato-page:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px);
+}
+
+
+/* --- Seção de Chamada para Categorias (index.html) --- */
+.chamada-categorias {
+    padding: 60px 20px;
+    background-color: #fff8f5;
+    text-align: center;
+}
+
+.chamada-categorias h2 {
+    font-size: 2.5rem;
+    color: #ff7aa0;
+    margin-bottom: 15px;
+}
+
+.chamada-categorias p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.categorias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Espaçamento entre os cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-categoria {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    width: 280px; /* Largura fixa para os cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-categoria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-categoria img {
+    width: 150px; /* Tamanho da imagem do ícone da categoria */
+    height: 150px;
+    border-radius: 50%; /* Imagens redondas */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffeded; /* Borda suave */
+}
+
+.card-categoria h3 {
+    font-size: 1.5rem;
+    color: #ff7aa0;
+    margin-bottom: 10px;
+}
+
+/* --- Seção de Depoimentos na Home (index.html) --- */
+.depoimentos-home { /* Nova seção de depoimentos */
+    padding: 60px 20px;
+    background-color: #ffe9f0; /* Um rosa bem claro */
+    text-align: center;
+}
+
+.depoimentos-home h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.depoimentos-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para quebrar em telas menores */
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.depoimentos-slider blockquote {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #555;
+    flex: 1; /* Permite que ocupe espaço igual */
+    min-width: 280px; /* Tamanho mínimo para o bloco */
+    max-width: 350px; /* Tamanho máximo para o bloco */
+    text-align: left;
+    position: relative; /* Para o posicionamento da citação */
+}
+
+.depoimentos-slider blockquote::before {
+    content: '“'; /* Aspas decorativas */
+    font-size: 4rem;
+    color: #ff7aa0;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.depoimentos-slider blockquote footer {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: right;
+}
+
+.btn-ver-mais-depoimentos {
+    display: inline-block;
+    background-color: #ff7aa0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-ver-mais-depoimentos:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px);
+}
+
+
+/* --- Seção Newsletter e Social (index.html) --- */
+.newsletter-social {
+    padding: 60px 20px;
+    background-color: #f7f7f7; /* Fundo mais neutro */
+}
+
+.newsletter-social .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-content,
+.social-content {
+    flex: 1;
+    min-width: 300px; /* Tamanho mínimo para cada coluna */
+    text-align: center;
+}
+
+.newsletter-content h2,
+.social-content h2 {
+    font-size: 2rem;
+    color: #ff7aa0;
+    margin-bottom: 15px;
+}
+
+.newsletter-content p,
+.social-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Para campos em linha em telas menores */
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background-color: #ff7aa0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px);
+}
+
+.social-icons-main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icons-main a {
+    color: #ff7aa0;
+    font-size: 3rem; /* Ícones maiores para destaque */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icons-main a:hover {
+    color: #ff5a8a;
+    transform: translateY(-5px);
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 768px) {
+    .chamada-categorias h2, .depoimentos-home h2, .newsletter-content h2, .social-content h2 {
+        font-size: 2rem;
+    }
+
+    .card-categoria {
+        width: 100%; /* Cards de categoria ocupam toda a largura */
+        max-width: 300px; /* Limita a largura máxima */
+    }
+
+    .depoimentos-slider blockquote {
+        min-width: unset;
+        width: 100%;
+        max-width: 400px; /* Limita a largura para celulares */
+    }
+
+    .newsletter-social .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+        width: 100%;
+    }
+}

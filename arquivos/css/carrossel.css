@@ -1,0 +1,79 @@
+.banner {
+    background: linear-gradient(to right, #ffb6c1, #ffd5ec);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%; /* de 90% deixei em 100% para ocupar toda a tela */
+    height: 100%; /* subistitui o 400px por 100% para fica dinamico */
+    align-content: center;
+    overflow: hidden;
+    background-color: #ffe9f0;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* troquei right que deixava mais a direita para o Center*/
+    width: 100%; /* 90% deixei 100% para ocupar toda a tela */
+    height: 100%; /* 90% deixei 100% para ocupar toda a tela */
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* de 85% mudei para 100% para usar o espaço total de tela  */
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.slide img {
+    width: 100%; /* de 85% mudei para 100% para usar o espaço total de tela */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    display: flex;
+}
+
+.slide.active {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel-indicators {
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ff7aa0;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.dot.active {
+    opacity: 1;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Presentes</title>
+    <link rel="stylesheet" href="arquivos/css/manu.css">
+    <link href="arquivos/css/footer.css" rel="stylesheet">
+    <link href="arquivos/css/numItensCar.css" rel="stylesheet">
+    <link href="arquivos/css/produtos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="index.html"><img src="imagens/Logo3Jo.png" alt="Jo Presentes" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <!--<li><a href="carrinho.html" id="carrinho-icone"><i style="font-size: 2rem; text-align: center;" class="bi bi-cart3"></i></a></li>-->
+                <li>
+                    <a href="carrinho.html" class="cart-link">
+                        <i style="font-size: 2rem; text-align: center;" class="bi bi-cart3"></i>
+                        <span id="cart-count">0</span> </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Conteudo dos Produtos -->
+<div class="parte-produtos">
+    <h3>O que você procura?</h3>
+    <button class="filter-btn" data-filter="perfumes">Perfumes</button>
+    <button class="filter-btn" data-filter="maquiagem">Maquiagem</button>
+    <button class="filter-btn" data-filter="papelaria">Papelaria</button>
+    <button class="filter-btn" data-filter="masculino">Masculino</button>
+    <button class="filter-btn" data-filter="feminino">Feminino</button>
+    <button class="filter-btn" data-filter="kits">Kits</button>
+    <button class="filter-btn" data-filter="all">Limpar Filtro</button>
+</div>
+
+<div class="carrossel-produtos">
+    <div class="item-produto" data-category="papelaria kits">
+        <img src="imagens/canetas.jpeg" alt="Kit Canetas Coloridas">
+        <h3>Kit Canetas Coloridas "Inspiração"</h3>
+        <p>Um conjunto vibrante de canetas gel e esferográficas para dar vida às suas anotações, desenhos e projetos. Cores intensas e escrita suave para inspirar sua criatividade.</p>
+        <h4>R$ 35,90</h4>
+        <button onclick="adicionarAoCarrinho('Kit Canetas Coloridas', 35.9)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/adesivos.jpeg" alt="Adesivos">
+        <h3>Coleção de Adesivos "Fantasia Criativa"</h3>
+        <p> Cartelas de adesivos fofos e temáticos para personalizar cadernos, agendas, scrapbooks ou para dar um toque único aos seus presentes. Use a imaginação!</p>
+        <h4>R$ 18,50</h4>
+        <button onclick="adicionarAoCarrinho('Coleção de Adesivos', 18.5)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/caderno1.jpeg" alt="Cadernos">
+        <h3>Caderno Capa Dura "Jardim Secreto"</h3>
+        <p>Um caderno elegante com capa dura e estampas florais delicadas, perfeito para suas anotações diárias, diário pessoal ou planejamento. Design que inspira tranquilidade.</p>
+        <h4>R$ 42,00</h4>
+        <button onclick="adicionarAoCarrinho('Caderno Capa Dura', 42)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/caderno2.jpeg" alt="Cadernos">
+        <h3>Caderno Premium "Padrões Geométricos"</h3>
+        <p>Caderno com design moderno de capa geométrica, ideal para quem busca organização e estilo. Folhas de alta gramatura, perfeito para bullet journal ou anotações importantes.</p>
+        <h4>R$ 48,00</h4>
+        <button onclick="adicionarAoCarrinho('Caderno Premium', 48)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/caderno3.jpeg" alt="Cadernos">
+        <h3>Caderno Espiral "Essencial"</h3>
+        <p>Leve e prático, este caderno é seu companheiro ideal para aulas, reuniões ou ideias rápidas. Capa simples e elegante, focado na funcionalidade para o dia a dia.</p>
+        <h4>R$ 32,00</h4>
+        <button onclick="adicionarAoCarrinho('Caderno Espiral', 32)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/caderno4.jpeg" alt="Cadernos">
+        <h3>Caderno Artístico "Folhas Pontilhadas"</h3>
+        <p>Com folhas pontilhadas, este caderno é versátil para bullet journal, esboços, lettering ou simplesmente para organizar seus pensamentos de forma criativa.</p>
+        <h4>R$ 45,00</h4>
+        <button onclick="adicionarAoCarrinho('Caderno Artístico', 45)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="papelaria">
+        <img src="imagens/caderno5.jpeg" alt="Cadernos">
+        <h3>Caderno "Inspiração Abstrata"</h3>
+        <p>Caderno com capa de arte abstrata e cores suaves, convidando à reflexão e à criatividade. Perfeito para quem busca um toque artístico em seus materiais.</p>
+        <h4>R$ 45,00</h4>
+        <button onclick="adicionarAoCarrinho('Caderno Inspiração Abstrata', 45)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="maquiagem feminino perfumes kits">
+        <img src="imagens/hidratante.jpeg" alt="Hidratante">
+        <h3>Hidratante Corporal "Toque de Seda"</h3>
+        <p>Hidratante com fragrância suave e textura leve, que proporciona hidratação profunda e rápida absorção. Deixa a pele macia, sedosa e delicadamente perfumada.</p>
+        <h4>R$ 65,00</h4>
+        <button onclick="adicionarAoCarrinho('Hidratante Corporal', 65)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit1.jpeg" alt="Kit Perfume Feminino Encanto Floral">
+        <h3>Kit Perfume Feminino "Encanto Floral"</h3>
+        <p>Um kit romântico que inclui um perfume com notas florais e um creme hidratante. Ideal para mulheres que amam fragrâncias leves e marcantes.</p>
+        <h4>R$ 155,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Perfume Feminino Encanto Floral', 155)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit2.jpeg" alt="Kit Perfume Feminino Doce Aura">
+        <h3>Kit Perfume Feminino "Doce Aura"</h3>
+        <p> Este kit combina um perfume adocicado com uma loção corporal que prolonga a sensação de frescor e delicadeza. Perfeito para momentos especiais.</p>
+        <h4>R$ 165,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Perfume Feminino Doce Aura', 165)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit3.jpeg" alt="Kit Beleza Essência Radiante">
+        <h3>Kit Beleza "Essência Radiante"</h3>
+        <p>Um kit completo com perfume e itens essenciais para realçar a beleza feminina. Para a mulher que brilha em todas as ocasiões.</p>
+        <h4>R$ 185,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Beleza Essência Radiante', 185)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="masculino perfumes kits">
+        <img src="imagens/kit4.jpeg" alt="Kit Perfume Masculino Aventura Cítrica">
+        <h3>Kit Perfume Masculino "Aventura Cítrica"</h3>
+        <p>Um kit que exala frescor e energia, com um perfume amadeirado cítrico e um pós-barba que complementa a fragrância. Para o homem que não abre mão da aventura.</p>
+        <h4>R$ 123,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Perfume Masculino Aventura Cítrica', 123)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="masculino perfumes kits">
+        <img src="imagens/kit5.jpeg" alt="Kit Masculino Força e Sofisticação">
+        <h3>Kit Masculino "Força e Sofisticação"</h3>
+        <p>Composto por um perfume amadeirado e um gel para banho, este kit transmite poder e elegância. Ideal para o homem moderno e decidido.</p>
+        <h4>R$ 278,50</h4>
+        <button onclick="adicionarAoCarrinho('Kit Masculino Força e Sofisticação', 278.5)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="masculino perfumes kits">
+        <img src="imagens/kit6.jpeg" alt="Kit Essência Clássica Masculina">
+        <h3>Kit "Essência Clássica" Masculina</h3>
+        <p>Um duo de perfume e desodorante com fragrância atemporal, que combina notas frescas e clássicas. Para o homem que valoriza a tradição e o bom gosto.</p>
+        <h4>R$ 97,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Essência Clássica Masculina', 97)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="masculino perfumes kits">
+        <img src="imagens/kit7.jpeg" alt="Kit Homem Confiante">
+        <h3>Kit "Homem Confiante"</h3>
+        <p>Este kit oferece uma experiência completa de cuidado masculino, com um perfume marcante e produtos para a rotina diária que realçam a confiança.</p>
+        <h4>R$ 257,90</h4>
+        <button onclick="adicionarAoCarrinho('Kit Homem Confiante', 257.9)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="masculino perfumes kits">
+        <img src="imagens/kit8.jpeg" alt="Kit Perfume Masculino Frescor Intenso">
+        <h3>Kit Perfume Masculino "Frescor Intenso"</h3>
+        <p> Para o homem dinâmico, este kit traz um perfume com notas aquáticas e um gel refrescante, ideal para revigorar o corpo e a mente.</p>
+        <h4>R$ 118,50</h4>
+        <button onclick="adicionarAoCarrinho('Kit Perfume Masculino Frescor Intenso', 118.5)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit9.jpeg" alt="Kit Perfume Feminino Sonho Tropical">
+        <h3>Kit Perfume Feminino "Sonho Tropical"</h3>
+        <p>Transporta para um paraíso com notas frutadas e florais. Inclui perfume e loção, ideal para quem ama fragrâncias exóticas e ensolaradas.</p>
+        <h4>R$ 155,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Perfume Feminino Sonho Tropical', 155)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit10.jpeg" alt="Kit Toque de Natureza Feminino">
+        <h3>Kit "Toque de Natureza" Feminino</h3>
+        <p>Uma combinação harmoniosa de perfume e sabonete líquido, com fragrâncias inspiradas na natureza e no bem-estar.</p>
+        <h4>R$ 140,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Toque de Natureza Feminino', 140)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit11.jpeg" alt="Kit Glamour Noite Estrelada">
+        <h3>Kit Glamour "Noite Estrelada"</h3>
+        <p>Perfume com notas orientais e brilho sutil para a pele, perfeito para eventos especiais onde você quer se destacar.</p>
+        <h4>R$ 195,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Glamour Noite Estrelada', 195)">Adicinar ao Carrinho</button>
+    </div>
+
+    <div class="item-produto" data-category="feminino perfumes kits">
+        <img src="imagens/kit12.jpeg" alt="Kit Presente Celebração da Vida">
+        <h3>Kit Presente "Celebração da Vida"</h3>
+        <p>Um kit festivo com perfume e creme, ideal para celebrar momentos de alegria e marcar presenças inesquecíveis.</p>
+        <h4>R$ 175,00</h4>
+        <button onclick="adicionarAoCarrinho('Kit Presente Celebração da Vida', 175)">Adicinar ao Carrinho</button>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Jo Presentes - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/jo.presente.multi/" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/jocelaine.boeira" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/5554981473202?text=Ol%C3%A1%2C%20vim%20pelo%20Site!" target="_blank" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="arquivos/js/carrinho.js"></script>
+    <script src="arquivos/js/filtroProdutos.js"></script>
+
+</body>
+</html>
