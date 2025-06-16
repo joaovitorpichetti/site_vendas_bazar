@@ -6,6 +6,33 @@
     background-color: #fff8f5; /* Cor de fundo suave */
 }
 
+/* Estilização para o contêiner do banner de texto */
+.banner-texto {
+    /* Centraliza o conteúdo dentro do banner */
+    text-align: center;
+
+    /* Adiciona um espaçamento interno para o texto não ficar colado nas bordas */
+    padding: 40px 20px;
+
+    /* --- ADICIONADO --- */
+    /* Cor de fundo suave para criar um bloco de destaque e garantir ótima legibilidade */
+    background-color: #ffb7c2;
+}
+
+/* (O restante do seu CSS continua igual) */
+
+/* Estilização para o título principal (h1) */
+.banner-texto h1 {
+    /* ... */
+}
+
+/* Estilização para o parágrafo/subtítulo (p) */
+.banner-texto p {
+    /* ... */
+}
+
+/* ... Media Query ... */
+
 /* Seção principal de contato */
 .section-contato-principal {
     margin-bottom: 60px;

@@ -11,6 +11,59 @@
     margin-bottom: 60px; /* Espaço após esta seção */
 }
 
+/* Estilização para o contêiner do banner de texto */
+.banner-texto {
+    /* Centraliza o conteúdo dentro do banner */
+    text-align: center;
+
+    /* Adiciona um espaçamento interno para o texto não ficar colado nas bordas */
+    padding: 40px 20px;
+
+    /* Define a cor do texto principal, um tom de cinza escuro/chumbo para bom contraste */
+    color: #333333;
+}
+
+.banner {
+    background: linear-gradient(to right, #ffb6c1, #ffd5ec);
+}
+/* Estilização para o título principal (h1) */
+.banner-texto h1 {
+    /* Tamanho da fonte para o título */
+    font-size: 3.5rem; /* 56px - ajuste conforme necessário */
+
+    /* Peso da fonte, "bold" para dar destaque */
+    font-weight: 700;
+
+    /* Define uma família de fontes elegante e moderna. 'Montserrat' é uma boa opção. */
+    /* Caso não esteja instalada, usará uma fonte sans-serif padrão. */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Remove a margem padrão do h1 para controlar o espaçamento */
+    margin: 0;
+
+    /* Espaçamento inferior para separar do parágrafo */
+    margin-bottom: 15px;
+}
+
+/* Estilização para o parágrafo/subtítulo (p) */
+.banner-texto p {
+    /* Tamanho da fonte para o subtítulo */
+    font-size: 1.25rem; /* 20px - ajuste conforme necessário */
+
+    /* Peso da fonte normal */
+    font-weight: 400;
+
+    /* Mesma família de fontes do título para consistência */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Remove a margem padrão do parágrafo */
+    margin: 0;
+
+    /* Cor um pouco mais suave que o título, se desejado */
+    color: #555555;
+}
+
+
 .container-sobre { /* Mantido do seu CSS, mas revisado para clareza */
     display: flex;
     align-items: center;
